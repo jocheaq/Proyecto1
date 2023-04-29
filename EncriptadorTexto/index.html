@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="encriptar">
+        <textarea
+          name="texto"
+          class="texto"
+          id="texto"
+          cols="30"
+          rows="10"
+          placeholder="Ingrese el texto a encriptar."
+        ></textarea>
+      </div>
+      <div class="terminos">
+        <p>Solo letras minisculas</p>
+      </div>
+      <div class="botones">
+        <button class="btn-encriptar" type="button" onclick="encriptar()">
+          Encriptar Texto
+        </button>
+
+        <input
+          type="button"
+          class="btn-desencriptar"
+          value="Desencriptar"
+          onclick="desencriptar()"
+        />
+      </div>
+    </div>
+  </body>
+  <script src="index.js"></script>
+</html>
